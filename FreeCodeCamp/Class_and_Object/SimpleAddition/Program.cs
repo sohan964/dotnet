@@ -15,7 +15,6 @@ namespace firstProgram{
 
             Console.WriteLine(myclass.Addition(2,3));//calling the class
 
-
             Console.WriteLine("inter two number: ");
             int a = Convert.ToInt32(Console.ReadLine());
             int b = Convert.ToInt32(Console.ReadLine());
