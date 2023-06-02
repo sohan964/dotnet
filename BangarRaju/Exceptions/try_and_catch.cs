@@ -1,15 +1,14 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EXCEPTION
+namespace ExceptionsPart1and2
 {
-    internal class Exception
+    internal class Program
     {
-        static void Main()
+        static void Main(string[] args)
         {
             try
             {
@@ -20,25 +19,18 @@ namespace EXCEPTION
                 Console.WriteLine("The result is: " + z);
 
             }
-            catch (DivideByZeroException ex)
+            catch(DivideByZeroException ex) { // it's use for num/0 error
+                Console.WriteLine(ex.Message);
+            }
+            catch(FormatException ex) // num/char error
             {
                 Console.WriteLine(ex.Message);
             }
-            catch (FormatException ex)
-            {
+            catch(Exception ex) {// for any other exception
                 Console.WriteLine(ex.Message);
             }
-
-            /*catch(Exception ex) 
-            {
-                Console.WriteLine(ex.Message);
-            }*/
-            Console.WriteLine("End of the program");
-            
-
+            Console.WriteLine("I am ok");
             Console.ReadLine();
-
-            
         }
     }
 }
