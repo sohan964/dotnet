@@ -11,7 +11,7 @@ namespace Collections
     {
         static void Main(string[] args)
         {
-            //ArrayList is work like Vector
+            //ArrayList is work like Vector but we can use at one ArrayList multi datatype
             ArrayList arr = new ArrayList();
             arr.Add(5);
             arr.Add(6);
