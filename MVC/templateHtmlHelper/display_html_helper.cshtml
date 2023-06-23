@@ -1,0 +1,23 @@
+<body >
+    
+    <div>
+        @*all about template display html helper*@
+        @Html.DisplayName("EmployeeName: "@*this for the name of the variable*@)
+        @Html.DisplayText("EmployeeName"@*This for showing the value of the *@)
+        <br />
+        <hr />
+        @Html.DisplayNameFor(x => x.DateOfBirth@*this for the name of the variable*@)
+        @(": ")
+        @Html.DisplayTextFor(x => x.DateOfBirth@*This for showing the value of the *@)
+        <br />
+        <br />
+        @DateTime.Now
+        <hr />
+        @Html.DisplayForModel()@*this will show the total model*@
+
+
+    </div>
+    <div>
+        
+    </div>
+</body>
