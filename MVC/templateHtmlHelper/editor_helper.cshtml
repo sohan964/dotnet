@@ -1,0 +1,21 @@
+
+    <div class="text"> 
+        @Html.DisplayName("EmployeeName")
+        @Html.Editor("EmployeeName") @*it's about edit and input*@
+        
+        <br /> <br />
+        @Html.DisplayNameFor(x=>x.EmployeeEmail)
+        @Html.EditorFor(x=>x.EmployeeEmail)
+        <br /> <br />
+        @Html.DisplayNameFor(x=>x.DateOfBirth)
+        @Html.EditorFor(x=>x.DateOfBirth)
+        <hr />
+        <hr />
+        @using(Html.BeginForm("MyForm"))
+            {
+                @Html.EditorForModel() @*it about edit the hole model*@
+            <input type="submit" value="OK"/> @*submit the edit input to the controller*@
+            }
+
+
+    </div>
