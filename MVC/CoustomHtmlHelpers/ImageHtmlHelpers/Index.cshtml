@@ -1,0 +1,33 @@
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        @*this is for the first way*@
+        @CoustomHelpers.Image("C:\\Users\\sohan\\OneDrive\\Pictures\\Screenshots\\Screenshot 2023-06-21 080158.png", "this the coustom image")
+        <br />
+        <br />
+         @*this is for the second way*@
+        @Html.Img("https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1cVfn2.img?w=612&h=304&q=90&m=6&f=jpg&u=t", "the player")
+        <br />
+        <br />
+         @*this for the 3rd way*@
+        @Html.ImgTag("the.link ","The.alt")
+
+        <br />
+        <br />
+        @*this is the puare html code for image add*@
+        <img width="300" height="400" src="https://images.unsplash.com/photo-1562569633-622303bafef5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YW5ncnklMjBsaW9ufGVufDB8fDB8fHww&w=1000&q=80" alt="A lone lion">
+        
+    </div>
+</body>
+</html>
