@@ -1,0 +1,45 @@
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index- all about the ViewBag</title>
+</head>
+<body>
+    <div> 
+        <h1>
+            @ViewBag.MyCustomPropert
+        </h1>
+        <ul>
+            @foreach(var i in ViewBag.MyList)
+            {
+                <li>@(i + " " + ViewBag.MyCustomPropert)</li>
+            }
+        </ul>
+        <ol>
+            @foreach(var i in ViewBag.Myarry)
+            {
+                <li>
+                    @(i + " " + ViewBag.MyCustomPropert)
+                </li>
+            }
+        </ol>
+    </div>
+    <div>
+        <ul>
+            @foreach(var i in ViewBag.MyEmpList)
+            {
+                <li>
+                    Name - @i.EmployeeName, Email - @i.EmployeeEmail, ID - @i.EmployeeId
+                </li>
+            }
+        </ul>
+    </div>
+</body>
+</html>
+
