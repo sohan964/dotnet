@@ -1,0 +1,22 @@
+
+@{
+    ViewBag.Title = "Index";
+}
+
+@RenderPage("~/Views/Home/Index2.cshtml","para1","para2",123) 
+    @*here will show the output of Index2 viewfile and the parameters are throing to index to*@
+
+
+
+@*Same Name*@
+@section renderName{ @*it will print in the Layoutfile after footer*@
+<h1>I am Sohan</h1>
+}
+<h2>Index</h2>
+<h3>I am calling by RenderBody!</h3>
+
+@section PageName
+{
+    <h1>this one is diclaer in Layout at header by PageName</h1>
+}
+
