@@ -1,0 +1,27 @@
+
+@{
+    Layout = null;
+}
+@*for multiple Layout startview will not work
+    but the simple Layout will for all which from part1*@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>_Layout</title>
+</head>
+<body>
+    <header style="height:200px; background-color:aqua ">
+        <h2>Header2</h2>
+
+    </header>
+    <div>
+        @RenderBody() 
+    </div>
+    <footer style="height:200px; background-color:aqua ">
+        <h2>Footer2</h2>
+    </footer>
+</body>
+</html>
